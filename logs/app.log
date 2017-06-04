@@ -1,0 +1,992 @@
+2017-06-04 11:25:38 [main] INFO :: FrameworkServlet 'dispatcher': initialization started
+2017-06-04 11:25:39 [main] INFO :: Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Jun 04 11:25:39 IST 2017]; root of context hierarchy
+2017-06-04 11:25:39 [main] INFO :: Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+2017-06-04 11:25:40 [main] INFO :: Root mapping to handler 'mainController'
+2017-06-04 11:25:40 [main] INFO :: FrameworkServlet 'dispatcher': initialization completed in 1697 ms
+2017-06-04 13:10:51 [main] INFO :: FrameworkServlet 'dispatcher': initialization started
+2017-06-04 13:10:51 [main] INFO :: Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Jun 04 13:10:51 IST 2017]; root of context hierarchy
+2017-06-04 13:10:52 [main] INFO :: Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+2017-06-04 13:10:53 [main] INFO :: Root mapping to handler 'mainController'
+2017-06-04 13:10:54 [main] INFO :: FrameworkServlet 'dispatcher': initialization completed in 2316 ms
+2017-06-04 13:11:16 [http-nio-8080-exec-5] INFO :: Loading landing...
+2017-06-04 13:11:56 [http-nio-8080-exec-8] INFO :: Loading landing...
+2017-06-04 13:31:32 [main] INFO :: FrameworkServlet 'dispatcher': initialization started
+2017-06-04 13:31:32 [main] INFO :: Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Jun 04 13:31:32 IST 2017]; root of context hierarchy
+2017-06-04 13:31:33 [main] INFO :: Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+2017-06-04 13:31:33 [main] WARN :: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mainController' defined in file [E:\home\workspace\eclipse\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\video-app\WEB-INF\classes\com\app\controller\MainController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type [com.app.storage.StorageService] found for dependency [com.app.storage.StorageService]: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {}; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.app.storage.StorageService] found for dependency [com.app.storage.StorageService]: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {}
+2017-06-04 13:31:33 [main] ERROR:: Context initialization failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mainController' defined in file [E:\home\workspace\eclipse\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\video-app\WEB-INF\classes\com\app\controller\MainController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type [com.app.storage.StorageService] found for dependency [com.app.storage.StorageService]: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {}; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.app.storage.StorageService] found for dependency [com.app.storage.StorageService]: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:749)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:189)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1143)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1046)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:510)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:775)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:861)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:541)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:668)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:682)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:553)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:494)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:158)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1183)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1099)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:989)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4921)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5231)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1439)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1429)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(Unknown Source)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:953)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:872)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1439)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1429)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(Unknown Source)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:953)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:422)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:793)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:655)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:355)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:495)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.app.storage.StorageService] found for dependency [com.app.storage.StorageService]: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoSuchBeanDefinitionException(DefaultListableBeanFactory.java:1398)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1051)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1018)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:834)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	... 52 more
+2017-06-04 13:42:36 [main] INFO :: FrameworkServlet 'dispatcher': initialization started
+2017-06-04 13:42:36 [main] INFO :: Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Jun 04 13:42:36 IST 2017]; root of context hierarchy
+2017-06-04 13:42:36 [main] INFO :: Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+2017-06-04 13:42:37 [main] WARN :: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mainController' defined in file [E:\home\workspace\eclipse\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\video-app\WEB-INF\classes\com\app\controller\MainController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type [com.app.storage.StorageService] found for dependency [com.app.storage.StorageService]: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {}; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.app.storage.StorageService] found for dependency [com.app.storage.StorageService]: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {}
+2017-06-04 13:42:37 [main] ERROR:: Context initialization failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mainController' defined in file [E:\home\workspace\eclipse\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\video-app\WEB-INF\classes\com\app\controller\MainController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type [com.app.storage.StorageService] found for dependency [com.app.storage.StorageService]: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {}; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.app.storage.StorageService] found for dependency [com.app.storage.StorageService]: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:749)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:189)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1143)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1046)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:510)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:775)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:861)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:541)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:668)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:682)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:553)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:494)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:158)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1183)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1099)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:989)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4921)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5231)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1439)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1429)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(Unknown Source)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:953)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:872)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1439)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1429)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(Unknown Source)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:953)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:422)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:793)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:655)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:355)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:495)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.app.storage.StorageService] found for dependency [com.app.storage.StorageService]: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoSuchBeanDefinitionException(DefaultListableBeanFactory.java:1398)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1051)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1018)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:834)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	... 52 more
+2017-06-04 13:43:43 [main] INFO :: FrameworkServlet 'dispatcher': initialization started
+2017-06-04 13:43:43 [main] INFO :: Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Jun 04 13:43:43 IST 2017]; root of context hierarchy
+2017-06-04 13:43:43 [main] INFO :: Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+2017-06-04 13:43:44 [main] WARN :: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mainController' defined in file [E:\home\workspace\eclipse\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\video-app\WEB-INF\classes\com\app\controller\MainController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type [com.app.storage.StorageService] found for dependency [com.app.storage.StorageService]: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {}; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.app.storage.StorageService] found for dependency [com.app.storage.StorageService]: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {}
+2017-06-04 13:43:44 [main] ERROR:: Context initialization failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mainController' defined in file [E:\home\workspace\eclipse\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\video-app\WEB-INF\classes\com\app\controller\MainController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type [com.app.storage.StorageService] found for dependency [com.app.storage.StorageService]: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {}; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.app.storage.StorageService] found for dependency [com.app.storage.StorageService]: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:749)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:189)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1143)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1046)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:510)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:775)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:861)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:541)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:668)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:682)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:553)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:494)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:158)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1183)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1099)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:989)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4921)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5231)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1439)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1429)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(Unknown Source)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:953)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:872)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1439)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1429)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(Unknown Source)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:953)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:422)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:793)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:655)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:355)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:495)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.app.storage.StorageService] found for dependency [com.app.storage.StorageService]: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoSuchBeanDefinitionException(DefaultListableBeanFactory.java:1398)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1051)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1018)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:834)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	... 52 more
+2017-06-04 13:47:11 [main] INFO :: FrameworkServlet 'dispatcher': initialization started
+2017-06-04 13:47:11 [main] INFO :: Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Jun 04 13:47:11 IST 2017]; root of context hierarchy
+2017-06-04 13:47:12 [main] INFO :: Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+2017-06-04 13:47:12 [main] WARN :: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mainController' defined in file [E:\home\workspace\eclipse\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\video-app\WEB-INF\classes\com\app\controller\MainController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type [com.app.storage.StorageService] found for dependency [com.app.storage.StorageService]: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {}; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.app.storage.StorageService] found for dependency [com.app.storage.StorageService]: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {}
+2017-06-04 13:47:12 [main] ERROR:: Context initialization failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mainController' defined in file [E:\home\workspace\eclipse\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\video-app\WEB-INF\classes\com\app\controller\MainController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type [com.app.storage.StorageService] found for dependency [com.app.storage.StorageService]: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {}; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.app.storage.StorageService] found for dependency [com.app.storage.StorageService]: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:749)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:189)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1143)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1046)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:510)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:775)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:861)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:541)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:668)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:682)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:553)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:494)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:158)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1183)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1099)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:989)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4921)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5231)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1439)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1429)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(Unknown Source)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:953)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:872)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1439)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1429)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(Unknown Source)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:953)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:422)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:793)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:655)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:355)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:495)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.app.storage.StorageService] found for dependency [com.app.storage.StorageService]: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoSuchBeanDefinitionException(DefaultListableBeanFactory.java:1398)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1051)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1018)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:834)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	... 52 more
+2017-06-04 13:49:46 [main] INFO :: FrameworkServlet 'dispatcher': initialization started
+2017-06-04 13:49:46 [main] INFO :: Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Jun 04 13:49:46 IST 2017]; root of context hierarchy
+2017-06-04 13:49:46 [main] INFO :: Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+2017-06-04 13:49:47 [main] WARN :: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mainController' defined in file [E:\home\workspace\eclipse\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\video-app\WEB-INF\classes\com\app\controller\MainController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type [com.app.storage.StorageService] found for dependency [com.app.storage.StorageService]: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {}; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.app.storage.StorageService] found for dependency [com.app.storage.StorageService]: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {}
+2017-06-04 13:49:47 [main] ERROR:: Context initialization failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mainController' defined in file [E:\home\workspace\eclipse\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\video-app\WEB-INF\classes\com\app\controller\MainController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type [com.app.storage.StorageService] found for dependency [com.app.storage.StorageService]: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {}; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.app.storage.StorageService] found for dependency [com.app.storage.StorageService]: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:749)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:189)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1143)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1046)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:510)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:775)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:861)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:541)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:668)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:682)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:553)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:494)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:158)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1183)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1099)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:989)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4921)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5231)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1439)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1429)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(Unknown Source)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:953)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:872)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1439)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1429)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(Unknown Source)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:953)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:422)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:793)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:655)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:355)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:495)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.app.storage.StorageService] found for dependency [com.app.storage.StorageService]: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoSuchBeanDefinitionException(DefaultListableBeanFactory.java:1398)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1051)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1018)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:834)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	... 52 more
+2017-06-04 13:53:01 [main] INFO :: FrameworkServlet 'dispatcher': initialization started
+2017-06-04 13:53:01 [main] INFO :: Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Jun 04 13:53:01 IST 2017]; root of context hierarchy
+2017-06-04 13:53:01 [main] INFO :: Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+2017-06-04 13:53:02 [main] ERROR:: Context initialization failed
+java.lang.IllegalStateException: Autowired annotation requires at least one argument: public com.app.storage.FileSystemStorageService() throws java.lang.Exception
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:297)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1069)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1042)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:510)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:187)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1048)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1018)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:834)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:189)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1143)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1046)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:510)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:775)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:861)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:541)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:668)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:682)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:553)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:494)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:158)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1183)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1099)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:989)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4921)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5231)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1439)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1429)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(Unknown Source)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:953)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:872)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1439)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1429)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(Unknown Source)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:953)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:422)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:793)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:655)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:355)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:495)
+2017-06-04 13:54:00 [main] INFO :: FrameworkServlet 'dispatcher': initialization started
+2017-06-04 13:54:00 [main] INFO :: Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Jun 04 13:54:00 IST 2017]; root of context hierarchy
+2017-06-04 13:54:00 [main] INFO :: Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+2017-06-04 13:54:01 [main] INFO :: Root mapping to handler 'mainController'
+2017-06-04 13:54:02 [main] INFO :: FrameworkServlet 'dispatcher': initialization completed in 1715 ms
+2017-06-04 13:54:36 [http-nio-8080-exec-4] INFO :: Loading landing...
+2017-06-04 14:01:07 [main] INFO :: FrameworkServlet 'dispatcher': initialization started
+2017-06-04 14:01:07 [main] INFO :: Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Jun 04 14:01:07 IST 2017]; root of context hierarchy
+2017-06-04 14:01:07 [main] INFO :: Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+2017-06-04 14:01:08 [main] INFO :: Root mapping to handler 'mainController'
+2017-06-04 14:01:09 [main] INFO :: FrameworkServlet 'dispatcher': initialization completed in 1860 ms
+2017-06-04 14:01:14 [http-nio-8080-exec-4] INFO :: Loading landing...
+2017-06-04 14:01:29 [http-nio-8080-exec-7] WARN :: No mapping found for HTTP request with URI [/video-app/upload] in DispatcherServlet with name 'dispatcher'
+2017-06-04 14:07:24 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Jun 04 14:01:07 IST 2017]; root of context hierarchy
+2017-06-04 14:07:26 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: FrameworkServlet 'dispatcher': initialization started
+2017-06-04 14:07:26 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Jun 04 14:07:26 IST 2017]; root of context hierarchy
+2017-06-04 14:07:27 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+2017-06-04 14:07:28 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Root mapping to handler 'mainController'
+2017-06-04 14:07:28 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Mapped URL path [/upload] onto handler 'mainController'
+2017-06-04 14:07:28 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Mapped URL path [/upload.*] onto handler 'mainController'
+2017-06-04 14:07:28 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Mapped URL path [/upload/] onto handler 'mainController'
+2017-06-04 14:07:28 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: FrameworkServlet 'dispatcher': initialization completed in 1521 ms
+2017-06-04 14:07:28 [http-nio-8080-exec-8] INFO :: testing
+2017-06-04 14:14:26 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Jun 04 14:07:26 IST 2017]; root of context hierarchy
+2017-06-04 14:14:28 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: FrameworkServlet 'dispatcher': initialization started
+2017-06-04 14:14:28 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Jun 04 14:14:28 IST 2017]; root of context hierarchy
+2017-06-04 14:14:29 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+2017-06-04 14:14:29 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Root mapping to handler 'mainController'
+2017-06-04 14:14:30 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: FrameworkServlet 'dispatcher': initialization completed in 1151 ms
+2017-06-04 14:15:15 [main] INFO :: FrameworkServlet 'dispatcher': initialization started
+2017-06-04 14:15:15 [main] INFO :: Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Jun 04 14:15:15 IST 2017]; root of context hierarchy
+2017-06-04 14:15:15 [main] INFO :: Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+2017-06-04 14:15:16 [main] INFO :: Root mapping to handler 'mainController'
+2017-06-04 14:15:17 [main] INFO :: FrameworkServlet 'dispatcher': initialization completed in 1709 ms
+2017-06-04 14:15:21 [http-nio-8080-exec-4] INFO :: Loading landing...
+2017-06-04 14:15:47 [http-nio-8080-exec-7] INFO :: Loading landing...
+2017-06-04 14:17:03 [main] INFO :: FrameworkServlet 'dispatcher': initialization started
+2017-06-04 14:17:03 [main] INFO :: Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Jun 04 14:17:03 IST 2017]; root of context hierarchy
+2017-06-04 14:17:03 [main] INFO :: Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+2017-06-04 14:17:05 [main] INFO :: Root mapping to handler 'mainController'
+2017-06-04 14:17:05 [main] INFO :: FrameworkServlet 'dispatcher': initialization completed in 1691 ms
+2017-06-04 14:17:08 [http-nio-8080-exec-4] INFO :: Loading landing...
+2017-06-04 14:17:15 [http-nio-8080-exec-5] WARN :: No mapping found for HTTP request with URI [/video-app/video-app/upload] in DispatcherServlet with name 'dispatcher'
+2017-06-04 14:17:58 [main] INFO :: FrameworkServlet 'dispatcher': initialization started
+2017-06-04 14:17:58 [main] INFO :: Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Jun 04 14:17:58 IST 2017]; root of context hierarchy
+2017-06-04 14:17:58 [main] INFO :: Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+2017-06-04 14:17:59 [main] INFO :: Root mapping to handler 'mainController'
+2017-06-04 14:18:00 [main] INFO :: FrameworkServlet 'dispatcher': initialization completed in 1966 ms
+2017-06-04 14:18:00 [http-nio-8080-exec-2] INFO :: Loading landing...
+2017-06-04 14:18:09 [http-nio-8080-exec-5] WARN :: No mapping found for HTTP request with URI [/video-app/upload] in DispatcherServlet with name 'dispatcher'
+2017-06-04 14:18:27 [http-nio-8080-exec-8] WARN :: No mapping found for HTTP request with URI [/video-app/upload] in DispatcherServlet with name 'dispatcher'
+2017-06-04 14:29:56 [http-nio-8080-exec-3] WARN :: No mapping found for HTTP request with URI [/video-app/upload] in DispatcherServlet with name 'dispatcher'
+2017-06-04 14:29:57 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Jun 04 14:17:58 IST 2017]; root of context hierarchy
+2017-06-04 14:30:03 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: FrameworkServlet 'dispatcher': initialization started
+2017-06-04 14:30:03 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Jun 04 14:30:03 IST 2017]; root of context hierarchy
+2017-06-04 14:30:03 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+2017-06-04 14:30:04 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Root mapping to handler 'mainController'
+2017-06-04 14:30:04 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Mapped URL path [/upload] onto handler 'mainController'
+2017-06-04 14:30:04 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Mapped URL path [/upload.*] onto handler 'mainController'
+2017-06-04 14:30:04 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Mapped URL path [/upload/] onto handler 'mainController'
+2017-06-04 14:30:04 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: FrameworkServlet 'dispatcher': initialization completed in 1364 ms
+2017-06-04 14:30:41 [http-nio-8080-exec-8] INFO :: Loading landing...
+2017-06-04 14:34:29 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Jun 04 14:30:03 IST 2017]; root of context hierarchy
+2017-06-04 14:34:31 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: FrameworkServlet 'dispatcher': initialization started
+2017-06-04 14:34:31 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Jun 04 14:34:31 IST 2017]; root of context hierarchy
+2017-06-04 14:34:31 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+2017-06-04 14:34:32 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Root mapping to handler 'mainController'
+2017-06-04 14:34:32 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Mapped URL path [/upload] onto handler 'mainController'
+2017-06-04 14:34:32 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Mapped URL path [/upload.*] onto handler 'mainController'
+2017-06-04 14:34:32 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Mapped URL path [/upload/] onto handler 'mainController'
+2017-06-04 14:34:32 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: FrameworkServlet 'dispatcher': initialization completed in 1128 ms
+2017-06-04 14:35:16 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Jun 04 14:34:31 IST 2017]; root of context hierarchy
+2017-06-04 14:35:18 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: FrameworkServlet 'dispatcher': initialization started
+2017-06-04 14:35:18 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Jun 04 14:35:18 IST 2017]; root of context hierarchy
+2017-06-04 14:35:18 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+2017-06-04 14:35:19 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Root mapping to handler 'mainController'
+2017-06-04 14:35:19 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: FrameworkServlet 'dispatcher': initialization completed in 1326 ms
+2017-06-04 14:35:22 [http-nio-8080-exec-14] INFO :: Loading landing...
+2017-06-04 14:35:28 [http-nio-8080-exec-17] WARN :: No mapping found for HTTP request with URI [/video-app/upload] in DispatcherServlet with name 'dispatcher'
+2017-06-04 14:35:42 [http-nio-8080-exec-18] INFO :: Loading landing...
+2017-06-04 14:35:52 [http-nio-8080-exec-15] WARN :: No mapping found for HTTP request with URI [/video-app/upload] in DispatcherServlet with name 'dispatcher'
+2017-06-04 14:36:30 [http-nio-8080-exec-21] INFO :: Loading landing...
+2017-06-04 14:36:41 [http-nio-8080-exec-23] WARN :: No mapping found for HTTP request with URI [/video-app/upload] in DispatcherServlet with name 'dispatcher'
+2017-06-04 14:37:23 [http-nio-8080-exec-25] INFO :: Loading landing...
+2017-06-04 14:37:28 [http-nio-8080-exec-27] WARN :: No mapping found for HTTP request with URI [/video-app/upload] in DispatcherServlet with name 'dispatcher'
+2017-06-04 14:38:26 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Jun 04 14:35:18 IST 2017]; root of context hierarchy
+2017-06-04 14:38:28 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: FrameworkServlet 'dispatcher': initialization started
+2017-06-04 14:38:28 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Jun 04 14:38:28 IST 2017]; root of context hierarchy
+2017-06-04 14:38:28 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+2017-06-04 14:38:29 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Root mapping to handler 'mainController'
+2017-06-04 14:38:29 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: FrameworkServlet 'dispatcher': initialization completed in 1225 ms
+2017-06-04 14:45:08 [main] INFO :: FrameworkServlet 'dispatcher': initialization started
+2017-06-04 14:45:08 [main] INFO :: Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Jun 04 14:45:08 IST 2017]; root of context hierarchy
+2017-06-04 14:45:08 [main] INFO :: Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+2017-06-04 14:45:10 [main] INFO :: Root mapping to handler 'mainController'
+2017-06-04 14:45:10 [main] INFO :: FrameworkServlet 'dispatcher': initialization completed in 1737 ms
+2017-06-04 14:45:15 [http-nio-8080-exec-2] INFO :: Loading landing...
+2017-06-04 14:45:21 [http-nio-8080-exec-3] WARN :: No mapping found for HTTP request with URI [/video-app/upload] in DispatcherServlet with name 'dispatcher'
+2017-06-04 14:50:17 [main] INFO :: FrameworkServlet 'dispatcher': initialization started
+2017-06-04 14:50:17 [main] INFO :: Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Jun 04 14:50:17 IST 2017]; root of context hierarchy
+2017-06-04 14:50:17 [main] INFO :: Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+2017-06-04 14:50:19 [main] INFO :: Root mapping to handler 'mainController'
+2017-06-04 14:50:19 [main] INFO :: FrameworkServlet 'dispatcher': initialization completed in 1691 ms
+2017-06-04 14:50:26 [http-nio-8080-exec-3] INFO :: Loading landing...
+2017-06-04 14:50:43 [http-nio-8080-exec-7] WARN :: No mapping found for HTTP request with URI [/video-app/upload] in DispatcherServlet with name 'dispatcher'
+2017-06-04 15:02:27 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Jun 04 14:50:17 IST 2017]; root of context hierarchy
+2017-06-04 15:02:30 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: FrameworkServlet 'dispatcher': initialization started
+2017-06-04 15:02:30 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Jun 04 15:02:30 IST 2017]; root of context hierarchy
+2017-06-04 15:02:30 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+2017-06-04 15:02:31 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Root mapping to handler 'mainController'
+2017-06-04 15:02:31 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: FrameworkServlet 'dispatcher': initialization completed in 1465 ms
+2017-06-04 15:02:55 [http-nio-8080-exec-6] INFO :: Loading landing...
+2017-06-04 15:03:01 [http-nio-8080-exec-10] WARN :: No mapping found for HTTP request with URI [/video-app/upload] in DispatcherServlet with name 'dispatcher'
+2017-06-04 15:04:52 [http-nio-8080-exec-11] WARN :: No mapping found for HTTP request with URI [/video-app/upload] in DispatcherServlet with name 'dispatcher'
+2017-06-04 15:05:16 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Jun 04 15:02:30 IST 2017]; root of context hierarchy
+2017-06-04 15:05:18 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: FrameworkServlet 'dispatcher': initialization started
+2017-06-04 15:05:18 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Jun 04 15:05:18 IST 2017]; root of context hierarchy
+2017-06-04 15:05:18 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+2017-06-04 15:05:19 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Root mapping to handler 'mainController'
+2017-06-04 15:05:19 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: FrameworkServlet 'dispatcher': initialization completed in 1017 ms
+2017-06-04 15:05:23 [http-nio-8080-exec-13] WARN :: No mapping found for HTTP request with URI [/video-app/upload] in DispatcherServlet with name 'dispatcher'
+2017-06-04 15:06:36 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Jun 04 15:05:18 IST 2017]; root of context hierarchy
+2017-06-04 15:06:38 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: FrameworkServlet 'dispatcher': initialization started
+2017-06-04 15:06:38 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Jun 04 15:06:38 IST 2017]; root of context hierarchy
+2017-06-04 15:06:38 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+2017-06-04 15:06:39 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Root mapping to handler 'mainController'
+2017-06-04 15:06:39 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: FrameworkServlet 'dispatcher': initialization completed in 1153 ms
+2017-06-04 15:10:52 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Jun 04 15:06:38 IST 2017]; root of context hierarchy
+2017-06-04 15:10:53 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: FrameworkServlet 'dispatcher': initialization started
+2017-06-04 15:10:54 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Jun 04 15:10:54 IST 2017]; root of context hierarchy
+2017-06-04 15:10:54 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+2017-06-04 15:10:55 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Root mapping to handler 'mainController'
+2017-06-04 15:12:42 [main] INFO :: FrameworkServlet 'dispatcher': initialization started
+2017-06-04 15:12:42 [main] INFO :: Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Jun 04 15:12:42 IST 2017]; root of context hierarchy
+2017-06-04 15:12:42 [main] INFO :: Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+2017-06-04 15:12:43 [main] INFO :: Root mapping to handler 'mainController'
+2017-06-04 15:12:43 [main] INFO :: FrameworkServlet 'dispatcher': initialization completed in 1717 ms
+2017-06-04 15:14:44 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Jun 04 15:12:42 IST 2017]; root of context hierarchy
+2017-06-04 15:14:47 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: FrameworkServlet 'dispatcher': initialization started
+2017-06-04 15:14:47 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Jun 04 15:14:47 IST 2017]; root of context hierarchy
+2017-06-04 15:14:47 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+2017-06-04 15:17:36 [main] INFO :: FrameworkServlet 'dispatcher': initialization started
+2017-06-04 15:17:36 [main] INFO :: Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Jun 04 15:17:36 IST 2017]; root of context hierarchy
+2017-06-04 15:17:36 [main] INFO :: Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+2017-06-04 15:17:37 [main] INFO :: Root mapping to handler 'mainController'
+2017-06-04 15:17:37 [main] INFO :: FrameworkServlet 'dispatcher': initialization completed in 1792 ms
+2017-06-04 15:20:03 [http-nio-8080-exec-7] WARN :: No mapping found for HTTP request with URI [/video-app/api/upload] in DispatcherServlet with name 'dispatcher'
+2017-06-04 15:24:34 [main] INFO :: FrameworkServlet 'dispatcher': initialization started
+2017-06-04 15:24:34 [main] INFO :: Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Jun 04 15:24:34 IST 2017]; root of context hierarchy
+2017-06-04 15:24:35 [main] INFO :: Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+2017-06-04 15:24:36 [main] INFO :: Root mapping to handler 'mainController'
+2017-06-04 15:24:36 [main] INFO :: FrameworkServlet 'dispatcher': initialization completed in 1677 ms
+2017-06-04 15:24:40 [http-nio-8080-exec-1] WARN :: No mapping found for HTTP request with URI [/video-app/WEB-INF/views/index.jsp] in DispatcherServlet with name 'dispatcher'
+2017-06-04 15:24:48 [http-nio-8080-exec-3] WARN :: No mapping found for HTTP request with URI [/video-app/WEB-INF/views/index.jsp] in DispatcherServlet with name 'dispatcher'
+2017-06-04 15:26:21 [main] INFO :: FrameworkServlet 'dispatcher': initialization started
+2017-06-04 15:26:21 [main] INFO :: Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Jun 04 15:26:21 IST 2017]; root of context hierarchy
+2017-06-04 15:26:21 [main] INFO :: Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+2017-06-04 15:26:23 [main] INFO :: Root mapping to handler 'mainController'
+2017-06-04 15:26:23 [main] INFO :: FrameworkServlet 'dispatcher': initialization completed in 1769 ms
+2017-06-04 15:36:25 [main] INFO :: FrameworkServlet 'dispatcher': initialization started
+2017-06-04 15:36:25 [main] INFO :: Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Jun 04 15:36:25 IST 2017]; root of context hierarchy
+2017-06-04 15:36:25 [main] INFO :: Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+2017-06-04 15:41:26 [main] INFO :: FrameworkServlet 'dispatcher': initialization started
+2017-06-04 15:41:27 [main] INFO :: Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Jun 04 15:41:27 IST 2017]; root of context hierarchy
+2017-06-04 15:41:27 [main] INFO :: Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+2017-06-04 15:41:28 [main] INFO :: Root mapping to handler 'mainController'
+2017-06-04 15:41:28 [main] INFO :: FrameworkServlet 'dispatcher': initialization completed in 1835 ms
+2017-06-04 15:42:39 [http-nio-8080-exec-6] WARN :: No mapping found for HTTP request with URI [/video-app/api/upload] in DispatcherServlet with name 'dispatcher'
+2017-06-04 15:42:55 [http-nio-8080-exec-1] WARN :: No mapping found for HTTP request with URI [/video-app/api/upload] in DispatcherServlet with name 'dispatcher'
+2017-06-04 15:45:41 [main] INFO :: Root WebApplicationContext: initialization started
+2017-06-04 15:45:42 [main] INFO :: Refreshing Root WebApplicationContext: startup date [Sun Jun 04 15:45:42 IST 2017]; root of context hierarchy
+2017-06-04 15:45:42 [main] INFO :: Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+2017-06-04 15:45:42 [main] ERROR:: Context initialization failed
+org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from ServletContext resource [/WEB-INF/applicationContext.xml]; nested exception is java.io.FileNotFoundException: Could not open ServletContext resource [/WEB-INF/applicationContext.xml]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:344)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:181)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:217)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:129)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:612)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:513)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:444)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:326)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:107)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4735)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5197)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1439)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1429)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(Unknown Source)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:953)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:872)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1439)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1429)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(Unknown Source)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:953)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:422)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:793)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:655)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:355)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:495)
+Caused by: java.io.FileNotFoundException: Could not open ServletContext resource [/WEB-INF/applicationContext.xml]
+	at org.springframework.web.context.support.ServletContextResource.getInputStream(ServletContextResource.java:141)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:330)
+	... 42 more
+2017-06-04 15:45:42 [main] INFO :: Closing Root WebApplicationContext: startup date [Sun Jun 04 15:45:42 IST 2017]; root of context hierarchy
+2017-06-04 15:45:42 [main] WARN :: Exception thrown from LifecycleProcessor on context close
+java.lang.IllegalStateException: LifecycleProcessor not initialized - call 'refresh' before invoking lifecycle methods via the context: Root WebApplicationContext: startup date [Sun Jun 04 15:45:42 IST 2017]; root of context hierarchy
+	at org.springframework.context.support.AbstractApplicationContext.getLifecycleProcessor(AbstractApplicationContext.java:416)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:997)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:956)
+	at org.springframework.web.context.ContextLoader.closeWebApplicationContext(ContextLoader.java:581)
+	at org.springframework.web.context.ContextLoaderListener.contextDestroyed(ContextLoaderListener.java:116)
+	at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:4782)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5419)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:187)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1439)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1429)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(Unknown Source)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:953)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:872)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1439)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1429)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(Unknown Source)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:953)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:422)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:793)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:655)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:355)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:495)
+2017-06-04 15:46:17 [main] INFO :: Root WebApplicationContext: initialization started
+2017-06-04 15:46:18 [main] INFO :: Refreshing Root WebApplicationContext: startup date [Sun Jun 04 15:46:18 IST 2017]; root of context hierarchy
+2017-06-04 15:46:18 [main] INFO :: Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+2017-06-04 15:46:18 [main] ERROR:: Context initialization failed
+org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from ServletContext resource [/WEB-INF/applicationContext.xml]; nested exception is java.io.FileNotFoundException: Could not open ServletContext resource [/WEB-INF/applicationContext.xml]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:344)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:181)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:217)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:129)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:612)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:513)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:444)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:326)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:107)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4735)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5197)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1439)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1429)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(Unknown Source)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:953)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:872)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1439)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1429)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(Unknown Source)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:953)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:422)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:793)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:655)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:355)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:495)
+Caused by: java.io.FileNotFoundException: Could not open ServletContext resource [/WEB-INF/applicationContext.xml]
+	at org.springframework.web.context.support.ServletContextResource.getInputStream(ServletContextResource.java:141)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:330)
+	... 42 more
+2017-06-04 15:46:18 [main] INFO :: Closing Root WebApplicationContext: startup date [Sun Jun 04 15:46:18 IST 2017]; root of context hierarchy
+2017-06-04 15:46:18 [main] WARN :: Exception thrown from LifecycleProcessor on context close
+java.lang.IllegalStateException: LifecycleProcessor not initialized - call 'refresh' before invoking lifecycle methods via the context: Root WebApplicationContext: startup date [Sun Jun 04 15:46:18 IST 2017]; root of context hierarchy
+	at org.springframework.context.support.AbstractApplicationContext.getLifecycleProcessor(AbstractApplicationContext.java:416)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:997)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:956)
+	at org.springframework.web.context.ContextLoader.closeWebApplicationContext(ContextLoader.java:581)
+	at org.springframework.web.context.ContextLoaderListener.contextDestroyed(ContextLoaderListener.java:116)
+	at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:4782)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5419)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:187)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1439)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1429)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(Unknown Source)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:953)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:872)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1439)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1429)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(Unknown Source)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:953)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:422)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:793)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:655)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:355)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:495)
+2017-06-04 15:47:36 [main] INFO :: Root WebApplicationContext: initialization started
+2017-06-04 15:47:37 [main] INFO :: Refreshing Root WebApplicationContext: startup date [Sun Jun 04 15:47:37 IST 2017]; root of context hierarchy
+2017-06-04 15:47:37 [main] INFO :: Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml]
+2017-06-04 15:47:37 [main] ERROR:: Context initialization failed
+org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from ServletContext resource [/WEB-INF/applicationContext.xml]; nested exception is java.io.FileNotFoundException: Could not open ServletContext resource [/WEB-INF/applicationContext.xml]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:344)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:181)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:217)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:129)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:612)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:513)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:444)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:326)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:107)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4735)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5197)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1439)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1429)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(Unknown Source)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:953)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:872)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1439)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1429)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(Unknown Source)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:953)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:422)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:793)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:655)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:355)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:495)
+Caused by: java.io.FileNotFoundException: Could not open ServletContext resource [/WEB-INF/applicationContext.xml]
+	at org.springframework.web.context.support.ServletContextResource.getInputStream(ServletContextResource.java:141)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:330)
+	... 42 more
+2017-06-04 15:47:37 [main] INFO :: Closing Root WebApplicationContext: startup date [Sun Jun 04 15:47:37 IST 2017]; root of context hierarchy
+2017-06-04 15:47:37 [main] WARN :: Exception thrown from LifecycleProcessor on context close
+java.lang.IllegalStateException: LifecycleProcessor not initialized - call 'refresh' before invoking lifecycle methods via the context: Root WebApplicationContext: startup date [Sun Jun 04 15:47:37 IST 2017]; root of context hierarchy
+	at org.springframework.context.support.AbstractApplicationContext.getLifecycleProcessor(AbstractApplicationContext.java:416)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:997)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:956)
+	at org.springframework.web.context.ContextLoader.closeWebApplicationContext(ContextLoader.java:581)
+	at org.springframework.web.context.ContextLoaderListener.contextDestroyed(ContextLoaderListener.java:116)
+	at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:4782)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5419)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:187)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1439)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1429)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(Unknown Source)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:953)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:872)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1439)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1429)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(Unknown Source)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:953)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:422)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:793)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:655)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:355)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:495)
+2017-06-04 15:50:10 [main] INFO :: FrameworkServlet 'dispatcher': initialization started
+2017-06-04 15:50:10 [main] INFO :: Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Jun 04 15:50:10 IST 2017]; root of context hierarchy
+2017-06-04 15:50:10 [main] INFO :: Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+2017-06-04 15:50:11 [main] INFO :: Root mapping to handler 'mainController'
+2017-06-04 15:50:11 [main] INFO :: FrameworkServlet 'dispatcher': initialization completed in 1920 ms
+2017-06-04 19:21:37 [main] INFO :: FrameworkServlet 'dispatcher': initialization started
+2017-06-04 19:21:37 [main] INFO :: Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Jun 04 19:21:37 IST 2017]; root of context hierarchy
+2017-06-04 19:21:37 [main] INFO :: Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+2017-06-04 19:21:40 [main] INFO :: Root mapping to handler 'mainController'
+2017-06-04 19:21:40 [main] INFO :: FrameworkServlet 'dispatcher': initialization completed in 3362 ms
+2017-06-04 19:42:20 [main] INFO :: FrameworkServlet 'dispatcher': initialization started
+2017-06-04 19:42:20 [main] INFO :: Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Jun 04 19:42:20 IST 2017]; root of context hierarchy
+2017-06-04 19:42:20 [main] INFO :: Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+2017-06-04 19:42:21 [main] INFO :: Root mapping to handler 'mainController'
+2017-06-04 19:42:21 [main] INFO :: FrameworkServlet 'dispatcher': initialization completed in 1777 ms
+2017-06-04 19:42:54 [http-nio-8080-exec-5] WARN :: No mapping found for HTTP request with URI [/video-app/api/upload] in DispatcherServlet with name 'dispatcher'
+2017-06-04 19:45:08 [http-nio-8080-exec-8] WARN :: No mapping found for HTTP request with URI [/video-app/api/upload] in DispatcherServlet with name 'dispatcher'
+2017-06-04 19:47:45 [http-nio-8080-exec-10] WARN :: No mapping found for HTTP request with URI [/video-app/api/upload] in DispatcherServlet with name 'dispatcher'
+2017-06-04 19:48:00 [http-nio-8080-exec-3] WARN :: No mapping found for HTTP request with URI [/video-app/api/upload] in DispatcherServlet with name 'dispatcher'
+2017-06-04 19:48:27 [main] INFO :: FrameworkServlet 'dispatcher': initialization started
+2017-06-04 19:48:27 [main] INFO :: Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Jun 04 19:48:27 IST 2017]; root of context hierarchy
+2017-06-04 19:48:28 [main] INFO :: Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+2017-06-04 19:48:29 [main] INFO :: Root mapping to handler 'mainController'
+2017-06-04 19:48:29 [main] INFO :: FrameworkServlet 'dispatcher': initialization completed in 1774 ms
+2017-06-04 19:48:38 [http-nio-8080-exec-3] WARN :: No mapping found for HTTP request with URI [/video-app/api/upload] in DispatcherServlet with name 'dispatcher'
+2017-06-04 19:48:44 [http-nio-8080-exec-4] WARN :: No mapping found for HTTP request with URI [/video-app/WEB-INF/views/index.jsp] in DispatcherServlet with name 'dispatcher'
+2017-06-04 19:54:28 [main] INFO :: FrameworkServlet 'dispatcher': initialization started
+2017-06-04 19:54:28 [main] INFO :: Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Jun 04 19:54:28 IST 2017]; root of context hierarchy
+2017-06-04 19:54:28 [main] INFO :: Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+2017-06-04 19:54:30 [main] INFO :: Mapped URL path [/upload] onto handler 'fileUploadController'
+2017-06-04 19:54:30 [main] INFO :: Mapped URL path [/upload.*] onto handler 'fileUploadController'
+2017-06-04 19:54:30 [main] INFO :: Mapped URL path [/upload/] onto handler 'fileUploadController'
+2017-06-04 19:54:30 [main] INFO :: Root mapping to handler 'mainController'
+2017-06-04 19:54:30 [main] INFO :: FrameworkServlet 'dispatcher': initialization completed in 1777 ms
+2017-06-04 20:02:51 [http-nio-8080-exec-10] INFO :: Inside upload controller
+2017-06-04 20:03:40 [http-nio-8080-exec-2] INFO :: Inside upload controller
+2017-06-04 20:04:28 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Jun 04 19:54:28 IST 2017]; root of context hierarchy
+2017-06-04 20:04:30 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: FrameworkServlet 'dispatcher': initialization started
+2017-06-04 20:04:30 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Jun 04 20:04:30 IST 2017]; root of context hierarchy
+2017-06-04 20:04:30 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+2017-06-04 20:04:31 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Mapped URL path [/upload] onto handler 'fileUploadController'
+2017-06-04 20:04:31 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Mapped URL path [/upload.*] onto handler 'fileUploadController'
+2017-06-04 20:04:31 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Mapped URL path [/upload/] onto handler 'fileUploadController'
+2017-06-04 20:04:31 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Root mapping to handler 'mainController'
+2017-06-04 20:04:32 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: FrameworkServlet 'dispatcher': initialization completed in 1525 ms
+2017-06-04 20:04:40 [http-nio-8080-exec-2] INFO :: Inside upload controller
+2017-06-04 20:05:26 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Jun 04 20:04:30 IST 2017]; root of context hierarchy
+2017-06-04 20:05:28 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: FrameworkServlet 'dispatcher': initialization started
+2017-06-04 20:05:28 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Jun 04 20:05:28 IST 2017]; root of context hierarchy
+2017-06-04 20:05:28 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+2017-06-04 20:05:29 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Root mapping to handler 'mainController'
+2017-06-04 20:05:29 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: FrameworkServlet 'dispatcher': initialization completed in 1143 ms
+2017-06-04 20:05:30 [http-nio-8080-exec-1] WARN :: No mapping found for HTTP request with URI [/video-app/upload] in DispatcherServlet with name 'dispatcher'
+2017-06-04 20:05:51 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Jun 04 20:05:28 IST 2017]; root of context hierarchy
+2017-06-04 20:05:52 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: FrameworkServlet 'dispatcher': initialization started
+2017-06-04 20:05:52 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Jun 04 20:05:52 IST 2017]; root of context hierarchy
+2017-06-04 20:05:53 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+2017-06-04 20:05:53 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Mapped URL path [/upload] onto handler 'fileUploadController'
+2017-06-04 20:05:53 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Mapped URL path [/upload.*] onto handler 'fileUploadController'
+2017-06-04 20:05:53 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Mapped URL path [/upload/] onto handler 'fileUploadController'
+2017-06-04 20:05:53 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Root mapping to handler 'mainController'
+2017-06-04 20:05:54 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: FrameworkServlet 'dispatcher': initialization completed in 1162 ms
+2017-06-04 21:03:37 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Jun 04 20:05:52 IST 2017]; root of context hierarchy
+2017-06-04 21:03:43 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: FrameworkServlet 'dispatcher': initialization started
+2017-06-04 21:03:43 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Jun 04 21:03:43 IST 2017]; root of context hierarchy
+2017-06-04 21:03:43 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+2017-06-04 21:03:44 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Mapped URL path [/upload] onto handler 'fileUploadController'
+2017-06-04 21:03:44 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Mapped URL path [/upload.*] onto handler 'fileUploadController'
+2017-06-04 21:03:44 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Mapped URL path [/upload/] onto handler 'fileUploadController'
+2017-06-04 21:03:44 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Root mapping to handler 'mainController'
+2017-06-04 21:03:45 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: FrameworkServlet 'dispatcher': initialization completed in 1509 ms
+2017-06-04 21:03:58 [http-nio-8080-exec-25] INFO :: Inside upload controller
+2017-06-04 21:04:28 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Jun 04 21:03:43 IST 2017]; root of context hierarchy
+2017-06-04 21:04:30 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: FrameworkServlet 'dispatcher': initialization started
+2017-06-04 21:04:30 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Jun 04 21:04:30 IST 2017]; root of context hierarchy
+2017-06-04 21:04:30 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+2017-06-04 21:04:31 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Mapped URL path [/upload] onto handler 'fileUploadController'
+2017-06-04 21:04:31 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Mapped URL path [/upload.*] onto handler 'fileUploadController'
+2017-06-04 21:04:31 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Mapped URL path [/upload/] onto handler 'fileUploadController'
+2017-06-04 21:04:31 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Root mapping to handler 'mainController'
+2017-06-04 21:04:32 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: FrameworkServlet 'dispatcher': initialization completed in 1624 ms
+2017-06-04 21:07:06 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Jun 04 21:04:30 IST 2017]; root of context hierarchy
+2017-06-04 21:07:07 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: FrameworkServlet 'dispatcher': initialization started
+2017-06-04 21:07:07 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Jun 04 21:07:07 IST 2017]; root of context hierarchy
+2017-06-04 21:07:07 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+2017-06-04 21:07:08 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Mapped URL path [/upload] onto handler 'fileUploadController'
+2017-06-04 21:07:08 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Mapped URL path [/upload.*] onto handler 'fileUploadController'
+2017-06-04 21:07:08 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Mapped URL path [/upload/] onto handler 'fileUploadController'
+2017-06-04 21:07:08 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Root mapping to handler 'mainController'
+2017-06-04 21:07:08 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: FrameworkServlet 'dispatcher': initialization completed in 1034 ms
+2017-06-04 21:07:19 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Jun 04 21:07:07 IST 2017]; root of context hierarchy
+2017-06-04 21:07:20 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: FrameworkServlet 'dispatcher': initialization started
+2017-06-04 21:07:20 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Jun 04 21:07:20 IST 2017]; root of context hierarchy
+2017-06-04 21:07:20 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+2017-06-04 21:07:21 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Mapped URL path [/upload] onto handler 'fileUploadController'
+2017-06-04 21:07:21 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Mapped URL path [/upload.*] onto handler 'fileUploadController'
+2017-06-04 21:07:21 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Mapped URL path [/upload/] onto handler 'fileUploadController'
+2017-06-04 21:07:21 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Root mapping to handler 'mainController'
+2017-06-04 21:07:21 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: FrameworkServlet 'dispatcher': initialization completed in 1015 ms
+2017-06-04 21:07:54 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Jun 04 21:07:20 IST 2017]; root of context hierarchy
+2017-06-04 21:07:55 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: FrameworkServlet 'dispatcher': initialization started
+2017-06-04 21:07:55 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Jun 04 21:07:55 IST 2017]; root of context hierarchy
+2017-06-04 21:07:55 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+2017-06-04 21:07:56 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Mapped URL path [/upload] onto handler 'fileUploadController'
+2017-06-04 21:07:56 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Mapped URL path [/upload.*] onto handler 'fileUploadController'
+2017-06-04 21:07:56 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Mapped URL path [/upload/] onto handler 'fileUploadController'
+2017-06-04 21:07:56 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Root mapping to handler 'mainController'
+2017-06-04 21:07:57 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: FrameworkServlet 'dispatcher': initialization completed in 1274 ms
+2017-06-04 21:17:57 [main] INFO :: FrameworkServlet 'dispatcher': initialization started
+2017-06-04 21:17:58 [main] INFO :: Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Jun 04 21:17:58 IST 2017]; root of context hierarchy
+2017-06-04 21:17:58 [main] INFO :: Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+2017-06-04 21:17:59 [main] INFO :: Mapped URL path [/upload] onto handler 'fileUploadController'
+2017-06-04 21:17:59 [main] INFO :: Mapped URL path [/upload.*] onto handler 'fileUploadController'
+2017-06-04 21:17:59 [main] INFO :: Mapped URL path [/upload/] onto handler 'fileUploadController'
+2017-06-04 21:17:59 [main] INFO :: Root mapping to handler 'mainController'
+2017-06-04 21:17:59 [main] INFO :: FrameworkServlet 'dispatcher': initialization completed in 2005 ms
+2017-06-04 21:21:18 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Closing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Jun 04 21:17:58 IST 2017]; root of context hierarchy
+2017-06-04 21:21:21 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: FrameworkServlet 'dispatcher': initialization started
+2017-06-04 21:21:21 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Jun 04 21:21:21 IST 2017]; root of context hierarchy
+2017-06-04 21:21:21 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+2017-06-04 21:21:22 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Mapped URL path [/upload] onto handler 'fileUploadController'
+2017-06-04 21:21:22 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Mapped URL path [/upload.*] onto handler 'fileUploadController'
+2017-06-04 21:21:22 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Mapped URL path [/upload/] onto handler 'fileUploadController'
+2017-06-04 21:21:22 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: Root mapping to handler 'mainController'
+2017-06-04 21:21:22 [ContainerBackgroundProcessor[StandardEngine[Catalina]]] INFO :: FrameworkServlet 'dispatcher': initialization completed in 1588 ms
+2017-06-04 21:21:24 [http-nio-8080-exec-9] INFO :: Inside upload controller
+2017-06-04 22:20:03 [http-nio-8080-exec-16] INFO :: Inside upload controller
+2017-06-04 22:49:02 [main] INFO :: FrameworkServlet 'dispatcher': initialization started
+2017-06-04 22:49:02 [main] INFO :: Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Jun 04 22:49:02 IST 2017]; root of context hierarchy
+2017-06-04 22:49:03 [main] INFO :: Loading XML bean definitions from ServletContext resource [/WEB-INF/dispatcher-servlet.xml]
+2017-06-04 22:49:04 [main] INFO :: Mapped URL path [/upload] onto handler 'fileUploadController'
+2017-06-04 22:49:04 [main] INFO :: Mapped URL path [/upload.*] onto handler 'fileUploadController'
+2017-06-04 22:49:04 [main] INFO :: Mapped URL path [/upload/] onto handler 'fileUploadController'
+2017-06-04 22:49:04 [main] INFO :: Root mapping to handler 'mainController'
+2017-06-04 22:49:05 [main] INFO :: FrameworkServlet 'dispatcher': initialization completed in 2477 ms
+2017-06-04 22:50:39 [http-nio-8080-exec-7] INFO :: Inside upload controller
